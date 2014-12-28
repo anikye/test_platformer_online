@@ -79,7 +79,8 @@ namespace HutongGames.PlayMaker.Actions
 				{
 					_mode = MatchmakingMode.SerialMatching;
 				}
-				PhotonNetwork.JoinRandomRoom(_prop,(byte)_maxPlayer,_mode);
+                //PhotonNetwork.JoinRandomRoom(_prop,(byte)_maxPlayer,_mode);
+                PhotonNetwork.JoinRandomRoom(_prop, (byte)_maxPlayer);
 			}else{
 					PhotonNetwork.JoinRandomRoom();
 			}
