@@ -304,6 +304,7 @@ GameObject:
   - 114: {fileID: 1555919545}
   - 114: {fileID: 1555919544}
   - 61: {fileID: 1555919541}
+  - 58: {fileID: 1555919546}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -335,8 +336,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .307692319, y: 1.52307689}
-  m_Center: {x: 0, y: .761538446}
+  m_Size: {x: .307692319, y: 1.28999996}
+  m_Center: {x: 0, y: .839999974}
 --- !u!212 &1555919542
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -383,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a8881356ff4f4409627fd663f5406c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunSpeed: 5
+  RunSpeed: 10
   OnGround: {fileID: 781779620}
 --- !u!114 &1555919545
 MonoBehaviour:
@@ -409,6 +410,17 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 1
   instantiationId: 1
+--- !u!58 &1555919546
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555919539}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .159999996
+  m_Center: {x: 0, y: .159999996}
 --- !u!1 &1751630883
 GameObject:
   m_ObjectHideFlags: 0

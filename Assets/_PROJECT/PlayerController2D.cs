@@ -25,17 +25,13 @@ public class PlayerController2D : MonoBehaviour
 
     void FixedUpdate()
     {
-        _movement = new Vector2(horizontal * RunSpeed, 0) * Time.fixedDeltaTime;
-        if (OnGround.IsContract)
-        {
+        _movement = new Vector2(horizontal * RunSpeed, 0);
 
-        }
-        else
-        {
-            _movement.y += Physics2D.gravity.y * _rigid.gravityScale * Time.fixedDeltaTime;
-        }
-        
-        _rigid.MovePosition(_rigid.position + _movement);
-        
+        if (!OnGround.IsContract)
+            _movement.y += Physics2D.gravity.y * _rigid.gravityScale;
+
+
+        _rigid.velocity = _movement;
+
     }
 }
